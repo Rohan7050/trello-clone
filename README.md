@@ -1,3 +1,3 @@
 # trello-clone
 ## db diagram
-[View db diagram](https://dbdiagram.io/d/instagram-64685c98dca9fb07c46e6863) _(Right-click and open in a new tab)_
+<a href="https://dbdiagram.io/d/64247bf15758ac5f17253620" target="_blank">View db diagram</a>
