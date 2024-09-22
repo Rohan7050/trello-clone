@@ -1,16 +1,14 @@
-import { Button } from "@/components/ui/button"
+import LoginPage from "./pages/LoginPage/LoginPage"
+// import RegisterPage from "./pages/RegisterPage/RegisterForm"
 
 function App() {
 
-  return (
-    <>
-      <h1 className="text-3xl font-bold underline text-center">
-      Hello world!
-    </h1>
-    <Button variant="outline">Button</Button>
-
-    </>
-  )
+    return (
+        <>
+            <LoginPage />
+            {/* <RegisterPage/> */}
+        </>
+    )
 }
 
 export default App
