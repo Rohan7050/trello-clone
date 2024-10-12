@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ["./src/**/*.{js,jsx,ts,tsx}",],
   theme: {
     extend: {
       borderRadius: {
@@ -9,6 +9,7 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
+        heading: '#cbd5e1',
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
