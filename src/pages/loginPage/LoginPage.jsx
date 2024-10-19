@@ -2,7 +2,6 @@ import { Controller, useForm } from "react-hook-form";
 import Input from "../../components/basic-components/Input/Input";
 import { useNavigate } from "react-router-dom";
 import Logo from "../../assets/icons/Logo";
-import TrelloRight from "../../assets/icons/trello-right.svg";
 
 function LoginPage() {
   const navigate = useNavigate();
