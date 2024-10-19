@@ -18,9 +18,9 @@ function LoginPage() {
     
     function submitHandler(data) {
         formServices.submitForm(loginFormModal.actionUrl, data).then(() => {
-            
+            console.log('res', data);
         }).catch(err => {
-
+            console.log('error', err);
         });
     }
 
