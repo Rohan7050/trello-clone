@@ -5,12 +5,15 @@ class FormServices {
   submitForm(url, data) {
     console.log("FormServices submit page data", url, data);
     return new Promise((resolve, reject) => {
-      this.http.postData(url, data).then((response) => {
-        resolve(response);
-      }).catch((error) => {
-        reject(error);
-      })
-    })
+      this.http
+        .postData(url, data)
+        .then((response) => {
+          resolve(response);
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
   }
 
   formHasError(error) {

@@ -1,57 +1,56 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}",],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
       colors: {
-        heading: '#cbd5e1',
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+        golden: "#FDCF57",
+        expurple: {
+          100: "#E0DFF4",
+          200: "#F8F8FE",
+          600: "#0E162D",
+          700: "#5071C4",
+          800: "#223870",
         },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
+        exwhite: {
+          100: "#FFFFFF",
+          200: "#EFEEEE",
+          300: "#6C6C6C",
+          // cec5c5
         },
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+        exgray: {
+          100: "#CDCED2",
+          200: "#8C8C8C", // "#6C7275",
+          300: "#6C7275", //#696969",
+          400: "#696969", //"#8C8C8C",
+          500: "#343839", //"#323232",
+          600: "#323232",
+          700: "#242525", //"#343839",
+          800: "#181919",
         },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        chart: {
-          1: "hsl(var(--chart-1))",
-          2: "hsl(var(--chart-2))",
-          3: "hsl(var(--chart-3))",
-          4: "hsl(var(--chart-4))",
-          5: "hsl(var(--chart-5))",
-        },
+      },
+      fontSize: {
+        xs: "12px",
+        sm: "0.875rem", //14px
+        base: "16px",
+        lg: "1.125rem", //18px
+        xl: "1.25rem", //20px
+        "2xl": "1.5rem", //24px
+        "3xl": "1.875rem", //30px
+        "4xl": "2.25rem", //36px
+        "5xl": "3rem", //48px
+        "6xl": "4rem",
+      },
+      height: {
+        screenheight: "calc(100vh - 48px)",
+      },
+      minHeight: {
+        screenheight: "calc(100vh - 48px)",
+      },
+      maxHeight: {
+        screenheight: "calc(100vh - 48px)",
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [],
 };
