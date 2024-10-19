@@ -6,6 +6,7 @@ import { LoginFormMetaModal } from "../../modal/loginPageModal";
 import FormActionButton from "../../components/basic-components/FormActionButton/FormActionButton";
 import formServices from "../../services/form.service";
 import {useNavigate} from 'react-router-dom'
+import {useDispatch} from 'react-redux'
 
 const loginFormModal = new LoginFormMetaModal().getMetaModel();
 
@@ -16,7 +17,11 @@ function LoginPage() {
     })
     
     function submitHandler(data) {
-        formServices.submitForm(loginFormModal.actionUrl, data);
+        formServices.submitForm(loginFormModal.actionUrl, data).then(() => {
+            
+        }).catch(err => {
+
+        });
     }
 
     function errorHandler(data) {
