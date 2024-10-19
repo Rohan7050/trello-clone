@@ -2,6 +2,7 @@ import { Controller, useForm } from "react-hook-form";
 import Input from "../../components/basic-components/Input/Input";
 import { useNavigate } from "react-router-dom";
 import Logo from "../../assets/icons/Logo";
+import TrelloRight from "../../assets/icons/trello-right.svg";
 
 function LoginPage() {
   const navigate = useNavigate();
@@ -24,7 +25,13 @@ function LoginPage() {
   };
 
   return (
-    <main className="min-h-screenheight bg-[#FAFBFC] py-20 shadow-2xl shadow-black flex items-center justify-center">
+    <main className="min-h-screenheight bg-[#FAFBFC] pt-20 shadow-2xl shadow-black flex items-center justify-between">
+      <div className="w-[30%] self-end">
+        <img
+          src="https://id-frontend.prod-east.frontend.public.atl-paas.net/assets/trello-left.4f52d13c.svg"
+          alt=""
+        />
+      </div>
       <div
         className="w-[25%] px-14 pt-0 pb-14 shadow-md shadow-black rounded-md space-y-2 bg-white"
         style={{ boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px" }}
@@ -98,6 +105,13 @@ function LoginPage() {
             </div>
           </div>
         </form>
+      </div>
+
+      <div className="w-[30%] self-end">
+        <img
+          src="https://id-frontend.prod-east.frontend.public.atl-paas.net/assets/trello-right.e6e102c7.svg"
+          alt=""
+        />
       </div>
     </main>
   );
